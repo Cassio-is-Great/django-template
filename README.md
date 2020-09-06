@@ -2,6 +2,12 @@
 
 This is a brand new repository that has been created.
 
+## First Time Setup
+1. Set git remote head to developement: 
+```bash
+git remote set-head origin development
+```
+
 ## Out of the Box Features
 
 1. **Issue Templates** - Default created issue templates
