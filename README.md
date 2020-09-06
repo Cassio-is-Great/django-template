@@ -7,6 +7,7 @@ This is a brand new repository that has been created.
 ```bash
 git remote set-head origin development
 ```
+2. Update your .vscode/settings.json colors to be different from your other workspaces. Use the VsCode [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock) to change your colors easily.
 
 ## Out of the Box Features
 
