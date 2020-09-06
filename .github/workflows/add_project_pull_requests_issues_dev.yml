@@ -1,0 +1,27 @@
+name: Auto Assign Issue to Project
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+    branches:
+      - development
+      - master
+env:
+  # For linking a repo project
+  #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+
+  # For linking a organization project
+  MY_GITHUB_TOKEN: ${{ secrets.AUTOMATE_ISSUES_PULL_REQUESTS }}
+
+jobs:
+  assign_one_project:
+    runs-on: ubuntu-latest
+    name: Assign to Default Project
+    steps:
+    - name: Assign NEW issues and pull request to project
+      uses: srggrs/assign-one-project-github-action@1.2.0
+      if: github.event.action == 'opened'
+      with:
+        project: 'https://github.com/orgs/Cassio-is-Great/projects/4'
