@@ -10,7 +10,7 @@ on:
       - master
 env:
   # For linking a repo project
-  #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
 
   # For linking a organization project
   MY_GITHUB_TOKEN: ${{ secrets.AUTOMATE_ISSUES_PULL_REQUESTS }}
