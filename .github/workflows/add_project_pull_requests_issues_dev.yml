@@ -18,10 +18,10 @@ env:
 jobs:
   assign_one_project:
     runs-on: ubuntu-latest
-    name: Assign to Default Project
+    name: Assign to Bash Profile Improvements Project
     steps:
-    - name: Assign NEW issues and pull request to project
+    - name: Assign NEW issues and NEW pull request to project
       uses: srggrs/assign-one-project-github-action@1.2.0
       if: github.event.action == 'opened'
       with:
-        project: 'https://github.com/Cassio-is-Great/django-template/projects/1'
+        project: 'https://github.com/Cassio-is-Great/bash_automation/projects/1'
