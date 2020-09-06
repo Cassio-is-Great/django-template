@@ -24,4 +24,4 @@ jobs:
       uses: srggrs/assign-one-project-github-action@1.2.0
       if: github.event.action == 'opened'
       with:
-        project: 'https://github.com/orgs/Cassio-is-Great/projects/4'
+        project: 'https://github.com/Cassio-is-Great/django-template/projects/1'
